@@ -1,14 +1,14 @@
 import {Outlet} from 'react-router-dom';
 
 import ButtonAppBar from './components/Navbar';
-// import Footer from './components/Footer'
+import BottomAppBar from './components/Footer';
 function App() {
 
   return (
     <>
       <ButtonAppBar />
       <Outlet />
-      {/* <Footer /> */}
+      <BottomAppBar />
     </>
   )
 }
