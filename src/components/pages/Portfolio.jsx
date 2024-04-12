@@ -13,8 +13,10 @@ export default function TitlebarImageList() {
         {/* <ListSubheader component="div"></ListSubheader> */}
       </ImageListItem>
       {itemData.map((item) => (
-        <ImageListItem key={item.img}>
+        <ImageListItem key={item.img} 
+        sx = {{":hover": {cursor: "pointer", transform: "scale(1.05)", boxShadow: "10px 10px 5px aquamarine"}, }}>
           <img
+            
             srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
             src={`${item.img}?w=248&fit=crop&auto=format`}
             alt={item.title}
