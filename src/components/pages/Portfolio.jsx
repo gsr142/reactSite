@@ -8,9 +8,9 @@ import IconButton from '@mui/material/IconButton';
 
 export default function TitlebarImageList() {
   return (
-    <ImageList sx={{ width: 500, height: 600 }}>
+    <ImageList sx= {{ maxWidth: 900, margin: '0 auto'}}>
       <ImageListItem key="Subheader" cols={2}>
-        <ListSubheader component="div"></ListSubheader>
+        {/* <ListSubheader component="div"></ListSubheader> */}
       </ImageListItem>
       {itemData.map((item) => (
         <ImageListItem key={item.img}>
@@ -41,7 +41,7 @@ export default function TitlebarImageList() {
 
 const itemData = [
   {
-    img: '../../public/images/loudmouth.png',
+    img: '/images/loudmouth.png',
     title: 'Loudmouth',
     rows: 2,
     cols: 2,
@@ -49,27 +49,27 @@ const itemData = [
     link: 'https://github.com/ahkar-hein/Loud-Mouth?tab=readme-ov-file',
   },
   {
-    img: '../../public/images/trivia.png',
+    img: '/images/trivia.png',
     title: 'Trivia-Mania',
     link: 'https://trivia-mania-34ca81ef04dc.herokuapp.com/',
   },
   {
-    img: '../../public/images/tipout-app.png',
+    img: '/images/tipout-app.png',
     title: 'Tipout App',
     link: 'https://gsr142-tipcalcwebapp-web-zg4sej.streamlit.app/',
   },
   {
-    img: '../../public/images/ace-hearts.png',
+    img: '/images/ace-hearts.png',
     title: 'OFC Calculator',
     link: 'https://gsr142-ofc-royalty-calculator-main-q5amqf.streamlit.app/'
   },
   {
-    img: '../../public/images/weather-app.png',
+    img: '/images/weather-app.png',
     title: 'Five day forecast',
     link: 'https://github.com/gsr142/five-day-forecast',
   },
   {
-    img: '../../public/images/football.png',
+    img: '/images/football.png',
     title: 'Fantasy Eliminator- coming soon',
     link: 'https://github.com/gsr142/FantasyEliminator',
     rows: 2,
