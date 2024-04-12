@@ -14,7 +14,7 @@ export default function TitlebarImageList() {
       </ImageListItem>
       {itemData.map((item) => (
         <ImageListItem key={item.img} 
-        sx = {{":hover": {cursor: "pointer", transform: "scale(1.05)", boxShadow: "10px 10px 5px aquamarine"}, }}>
+        sx = {{":hover": {cursor: "pointer", transform: "scale(1.02)"}, }}>
           <img
             
             srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
