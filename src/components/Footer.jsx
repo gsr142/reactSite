@@ -18,8 +18,9 @@ import MenuIcon from "@mui/icons-material/Menu";
 import AddIcon from "@mui/icons-material/Add";
 import SearchIcon from "@mui/icons-material/Search";
 import MoreIcon from "@mui/icons-material/MoreVert";
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import InstagramIcon from '@mui/icons-material/Instagram';
 const StyledFab = styled(Fab)({
   position: "absolute",
   zIndex: 1,
@@ -33,14 +34,26 @@ export default function BottomAppBar() {
   return (
     <React.Fragment>
       <CssBaseline />
-      
+
       <AppBar position="fixed" color="primary" sx={{ top: "auto", bottom: 0 }}>
         <Toolbar>
-          <IconButton color="inherit">
+          <IconButton color="inherit"  sx={{ margin:"auto" }}>
+            <a href="https://github.com/gsr142"
+            target="_blank" rel="noopener noreferrer">
             <GitHubIcon />
+            </a>
           </IconButton>
-          <IconButton>
-            <LinkedInIcon />
+          <IconButton color="inherit" sx={{ margin:"auto" }}>
+            <a href="https://www.linkedin.com/in/gregory-richardson-7bb3a1280/"
+            target="_blank" rel="noopener noreferrer">
+              <LinkedInIcon />
+            </a>
+          </IconButton>
+          <IconButton color="inherit" sx={{ margin:"auto" }}>
+            <a href="https://www.instagram.com/gregorysrichardson/"
+            target="_blank" rel="noopener noreferrer">
+              <InstagramIcon />
+            </a>
           </IconButton>
         </Toolbar>
       </AppBar>
