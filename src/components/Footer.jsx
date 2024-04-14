@@ -38,17 +38,20 @@ export default function BottomAppBar() {
       <AppBar position="fixed" color="primary" sx={{ top: "auto", bottom: 0 }}>
         <Toolbar>
           <IconButton color="inherit"  sx={{ margin:"auto" }}>
-            <a href="https://github.com/gsr142">
+            <a href="https://github.com/gsr142"
+            target="_blank" rel="noopener noreferrer">
             <GitHubIcon />
             </a>
           </IconButton>
           <IconButton color="inherit" sx={{ margin:"auto" }}>
-            <a href="https://www.linkedin.com/in/gregory-richardson-7bb3a1280/">
+            <a href="https://www.linkedin.com/in/gregory-richardson-7bb3a1280/"
+            target="_blank" rel="noopener noreferrer">
               <LinkedInIcon />
             </a>
           </IconButton>
           <IconButton color="inherit" sx={{ margin:"auto" }}>
-            <a href="https://www.instagram.com/gregorysrichardson/">
+            <a href="https://www.instagram.com/gregorysrichardson/"
+            target="_blank" rel="noopener noreferrer">
               <InstagramIcon />
             </a>
           </IconButton>
