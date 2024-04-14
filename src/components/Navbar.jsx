@@ -1,8 +1,7 @@
-import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
-// import Typography from "@mui/material/Typography";
+import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -21,14 +20,14 @@ export default function ButtonAppBar() {
           >
             <MenuIcon />
           </IconButton>
-          <Button href="/about" color="inherit">
-            About
+          <Button href="/" color="inherit">
+            <Typography variant="h6">About</Typography>
           </Button>
           <Button href="/portfolio" color="inherit">
-            Portfolio
+          <Typography variant="h6">Portfolio</Typography>
           </Button>
           <Button href="/contact" color="inherit">
-            Contact
+          <Typography variant="h6">Contact</Typography>
           </Button>
         </Toolbar>
       </AppBar>

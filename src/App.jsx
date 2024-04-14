@@ -2,15 +2,23 @@ import {Outlet} from 'react-router-dom';
 
 import ButtonAppBar from './components/Navbar';
 import BottomAppBar from './components/Footer';
-function App() {
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
+
+const darkTheme = createTheme({
+  palette: {
+    mode: 'dark',
+  },
+});
+export default function App() {
 
   return (
-    <>
+    <ThemeProvider theme={darkTheme}>
+      <CssBaseline />
       <ButtonAppBar />
       <Outlet />
       <BottomAppBar />
-    </>
+    </ThemeProvider>
   )
 }
 
-export default App;
