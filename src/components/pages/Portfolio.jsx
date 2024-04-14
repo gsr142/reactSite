@@ -1,17 +1,13 @@
-import * as React from 'react';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
-import ListSubheader from '@mui/material/ListSubheader';
 import IconButton from '@mui/material/IconButton';
 
 
 export default function TitlebarImageList() {
   return (
-    <ImageList sx= {{ maxWidth: 900, margin: '0 auto'}}>
-      <ImageListItem key="Subheader" cols={2}>
-        {/* <ListSubheader component="div"></ListSubheader> */}
-      </ImageListItem>
+    <ImageList sx= {{ maxWidth: 900, margin: 'auto'}}>
+      
       {itemData.map((item) => (
         <ImageListItem key={item.img} 
         sx = {{":hover": {cursor: "pointer", transform: "scale(1.02)"}, }}>
