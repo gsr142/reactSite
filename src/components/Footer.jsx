@@ -1,59 +1,49 @@
 import * as React from "react";
-import { styled } from "@mui/material/styles";
 import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
 import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
-import Paper from "@mui/material/Paper";
-import Fab from "@mui/material/Fab";
-import List from "@mui/material/List";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemAvatar from "@mui/material/ListItemAvatar";
-import ListItemText from "@mui/material/ListItemText";
-import ListSubheader from "@mui/material/ListSubheader";
-import Avatar from "@mui/material/Avatar";
-import MenuIcon from "@mui/icons-material/Menu";
-import AddIcon from "@mui/icons-material/Add";
-import SearchIcon from "@mui/icons-material/Search";
-import MoreIcon from "@mui/icons-material/MoreVert";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import InstagramIcon from '@mui/icons-material/Instagram';
-const StyledFab = styled(Fab)({
-  position: "absolute",
-  zIndex: 1,
-  top: -30,
-  left: 0,
-  right: 0,
-  margin: "0 auto",
-});
+import InstagramIcon from "@mui/icons-material/Instagram";
 
 export default function BottomAppBar() {
   return (
     <React.Fragment>
       <CssBaseline />
 
-      <AppBar position="fixed" color="primary" sx={{ top: "auto", bottom: 0 }}>
+      <AppBar
+        position="fixed"
+        color="primary"
+        sx={{ top: "auto", bottom: 0, bgcolor: "#1557" }}
+      >
         <Toolbar>
-          <IconButton color="inherit"  sx={{ margin:"auto" }}>
-            <a href="https://github.com/gsr142"
-            target="_blank" rel="noopener noreferrer">
+          <IconButton
+            color="default"
+            onClick={() => window.open("https://github.com/gsr142")}
+            sx={{ margin: "auto" }}
+          >
             <GitHubIcon />
-            </a>
           </IconButton>
-          <IconButton color="inherit" sx={{ margin:"auto" }}>
-            <a href="https://www.linkedin.com/in/gregory-richardson-7bb3a1280/"
-            target="_blank" rel="noopener noreferrer">
-              <LinkedInIcon />
-            </a>
+          <IconButton
+            color="inherit"
+            onClick={() =>
+              window.open(
+                "https://www.linkedin.com/in/gregory-richardson-7bb3a1280/"
+              )
+            }
+            sx={{ margin: "auto" }}
+          >
+            <LinkedInIcon />
           </IconButton>
-          <IconButton color="inherit" sx={{ margin:"auto" }}>
-            <a href="https://www.instagram.com/gregorysrichardson/"
-            target="_blank" rel="noopener noreferrer">
-              <InstagramIcon />
-            </a>
+          <IconButton
+            color="inherit"
+            onClick={() =>
+              window.open("https://www.instagram.com/gregorysrichardson/")
+            }
+            sx={{ margin: "auto" }}
+          >
+            <InstagramIcon />
           </IconButton>
         </Toolbar>
       </AppBar>
