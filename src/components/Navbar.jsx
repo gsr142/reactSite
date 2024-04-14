@@ -7,7 +7,7 @@ import Button from "@mui/material/Button";
 export default function ButtonAppBar() {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar position="static" sx ={{ bgcolor: "#1557" }}>
         <Toolbar justifyContent="center">
           <Button href="/" color="inherit" sx={{ margin:"auto" }}>
             <Typography variant="h6">About</Typography>
