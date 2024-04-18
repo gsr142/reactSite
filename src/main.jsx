@@ -4,7 +4,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import App from "./App.jsx";
 // import "./index.css";
 
-// import Contact from "./components/pages/Contact.jsx";
+import Contact from "./components/pages/Contact.jsx";
 import TitlebarImageList from "./components/pages/Portfolio.jsx";
 import Error from "./components/pages/Error.jsx";
 import IntroDivider from "./components/pages/About.jsx";
@@ -18,10 +18,10 @@ const router = createBrowserRouter([
         index: true,
         element: <IntroDivider />,
       },
-      // {
-      //   path: "contact",
-      //   element: <Contact />,
-      // },
+      {
+        path: "contact",
+        element: <Contact />,
+      },
       {
         path: "portfolio",
         element: <TitlebarImageList />,
