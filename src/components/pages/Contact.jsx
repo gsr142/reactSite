@@ -28,6 +28,11 @@ export default function Contact() {
         margin="normal"
         required
       />
+      <ValidationError 
+        prefix="Email" 
+        field="email"
+        errors={state.errors}
+      />
       <TextField
         label="Subject"
         name="subject"
