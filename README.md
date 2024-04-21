@@ -10,7 +10,7 @@ This is my portfolio website, to be updated as I learn and grow as a developer. 
 * Contact: A contact form that sends me an email.
 
 ## Link to site
-### [My Portfolio](https://gsr142.github.io/My-Portfolio/)
+### [My Portfolio](https://gregorysrichardson.netlify.app/)
 
 
 
