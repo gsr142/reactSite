@@ -9,13 +9,13 @@ export default function ButtonAppBar() {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" sx ={{ bgcolor: "#1557" }}>
         <Toolbar justifyContent="center">
-          <Button href="/" color="inherit" sx={{ margin:"auto" }}>
+          <Button href="/" color="inherit" sx={{ margin:"auto", paddingRight:"18px" }}>
             <Typography variant="h6">About</Typography>
           </Button>
-          <Button href="/portfolio" color="inherit"sx={{ margin:"auto" }}>
+          <Button href="/portfolio" color="inherit"sx={{ margin:"auto" , paddingLeft:"9px", paddingRight:"9px"}}>
           <Typography variant="h6">Portfolio</Typography>
           </Button>
-          <Button href="/contact" color="inherit" sx={{ margin:"auto" }}>
+          <Button href="/contact" color="inherit" sx={{ margin:"auto", paddingLeft:"18px" }}>
           <Typography variant="h6">Contact</Typography>
           </Button>
         </Toolbar>
