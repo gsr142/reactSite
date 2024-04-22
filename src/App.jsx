@@ -17,6 +17,9 @@ export default function App() {
       <CssBaseline />
       <ButtonAppBar />
       <Outlet />
+      <br />
+      <br />
+      <br />    
       <BottomAppBar />
     </ThemeProvider>
   )
